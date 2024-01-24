@@ -1,0 +1,36 @@
+body {
+  margin: 2em;
+  font: 1.2em Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+}
+
+:root {
+    --primary: #444;
+    --text: #fff;
+}
+
+h1 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(173, 216, 230,.3);
+    margin: 0 0 2em 0;
+}
+  
+.wrapper {
+    background-color: #fff;
+    gap: 2px;
+}
+
+.wrapper > * {
+    background: var(--primary);
+    color: var(--text);
+    padding: .5em;
+}
+
+.info {
+    border: 2px solid rgb(173, 216, 230);
+    background-color: rgba(173, 216, 230,.1);
+    margin: 2em 0 0 0;
+    padding: 0 .5em;
+    font-size: .9rem;
+    max-inline-size: 600px;
+    border-radius: .5em;
+}
