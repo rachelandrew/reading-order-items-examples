@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>flex-flow with order: reading-order-items-examples</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .wrapper a:nth-child(3) {
+            order: -1;
+        }
+
+        .wrapper {
+            writing-mode: vertical-lr;
+            display: flex;
+            flex-wrap: wrap;
+            reading-order-items: flex-flow;
+            height: 200px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>reading-order-items: flex-flow, with order modification</h1>
+    <div class="wrapper">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
+    </div>
+
+    <div class="info">
+        <p>In this example, the reading order should follow the flow order.
+        In vertical-lr this is top to bottom left to right, therefore—"Item 3", "Item 1", "Item 2","Item 4", "Item 5".</p>
+    </div>
+  </body>
+</html>

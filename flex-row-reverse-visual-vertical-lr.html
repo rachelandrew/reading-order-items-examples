@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>flex-visual with row-reverse: reading-order-items-examples</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+
+        .wrapper {
+            writing-mode: vertical-lr;
+            display: flex;
+            flex-direction: row-reverse;
+            reading-order-items: flex-visual;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>reading-order-items: flex-visual, with row-reverse</h1>
+    <div class="wrapper">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+    </div>
+
+    <div class="info">
+        <p>In this example, the reading order should follow the visual order. In vertical-lr, this is top to bottom, therefore—"Item 3", "Item 2", "Item 1".</p>
+    </div>
+  </body>
+</html>
