@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>flex-flow with order, row-reverse, rtl: reading-order-items-examples</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .wrapper a:nth-child(3) {
+            order: -1;
+        }
+
+        .wrapper {
+            display: flex;
+            direction: rtl;
+            flex-direction: row-reverse;
+            reading-order-items: flex-flow;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>reading-order-items: flex-flow, with order modification, flex-direction: row-reverse, direction: rtl</h1>
+    <div class="wrapper">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+    </div>
+
+    <div class="info">
+        <p>In this example, the reading order should follow the flow order. As per the direction property this is right to left, however as we are in row-reverse the flow reads left to right, therefore—"Item 3", "Item 1", "Item 2".</p>
+    </div>
+  </body>
+</html>

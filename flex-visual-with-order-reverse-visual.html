@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>flex-visual with order, row-reverse: reading-order-items-examples</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .wrapper a:nth-child(3) {
+            order: -1;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            reading-order-items: flex-visual;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>reading-order-items: flex-visual, with order modification, flex-direction: row-reverse</h1>
+    <div class="wrapper">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+    </div>
+
+    <div class="info">
+        <p>In this example, the reading order should follow the visual order. In English, this is left to right therefore even though flex-direction is set to row-reverse the flow reads left to right, therefore—"Item 2", "Item 1", "Item 3".</p>
+    </div>
+  </body>
+</html>
