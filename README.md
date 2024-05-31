@@ -11,7 +11,15 @@ Once there is a test implementation, these demos should work. Until then, the de
 ### Writing mode horizontal-tb, dir ltr
 
 - [Flex with order modifications, `reading-order-items: flex-flow`](/flex-flow-with-order.html)
+- [Flex with order modifications, `reading-order-items: flex-flow`, `flex-direction: row-reverse`](/flex-flow-with-order-reverse.html)
+- [Flex with order modifications, `reading-order-items: flex-visual`, `flex-direction: row-reverse`](/flex-visual-with-order-reverse.html)
 - [Flex with `row-reverse`, `reading-order-items: flex-visual`](/flex-row-reverse-visual.html)
+
+### Writing mode horizontal-tb, dir rtl
+
+- [Flex with order modifications, rtl, `reading-order-items: flex-flow`, `flex-direction: row-reverse`](/flex-flow-with-order-reverse-rtl.html)
+- [Flex with order modifications, rtl, `reading-order-items: flex-visual`, `flex-direction: row-reverse`](/flex-visual-with-order-reverse-rtl.html)
+
 
 ### Writing mode vertical-lr
 
