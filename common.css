@@ -24,13 +24,3 @@ h1 {
     color: var(--text);
     padding: .5em;
 }
-
-.info {
-    border: 2px solid rgb(173, 216, 230);
-    background-color: rgba(173, 216, 230,.1);
-    margin: 2em 0 0 0;
-    padding: 0 .5em;
-    font-size: .9rem;
-    max-inline-size: 600px;
-    border-radius: .5em;
-}
